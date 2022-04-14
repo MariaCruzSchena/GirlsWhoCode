@@ -27,9 +27,11 @@
     background-color: #2c2b2a;
     margin: 0px;    
     padding: 0px 0px 0px 0px;
-    grid-area: header;
-    box-sizing: border-box;         
+    grid-area: header;   
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);        
 }
+
+  
     
 .header__index {
     height: fit-content;
@@ -40,7 +42,8 @@
     background-color: #2c2b2a;          
     margin: 0px;    
     padding: 0px;
-    grid-area: header;        
+    grid-area: header; 
+          
 }
     
 .header__logo {
@@ -50,9 +53,24 @@
     font-weight: bold; 
     text-decoration: none;
     color:rgb(255, 255, 255);
-    text-transform: uppercase;                                  
+    text-transform: uppercase;  
+    animation: tracking-in-expand 1s ease-in both;
+                                
 }
-    
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
 .header__nav {
     width: 100%;
 }
@@ -144,10 +162,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color:  rgb(220, 245, 218, 1);               
+    background-color:  rgb(220, 245, 218, 1);   
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;       
 }
-
-
+  
 .misionConteiner__title {
     font-size: 1.5rem;
     font-weight: bold; 
@@ -157,9 +175,9 @@ a:hover {
     color: rgb(96,188,87);
     text-transform: uppercase;
     margin: 0px;
-    padding: 5px;                 
+    padding: 5px;  
 }
-    
+
 .misionConteiner__paragraph {
     font-size: 1.5rem;    
     font-weight: bold; 
@@ -167,21 +185,19 @@ a:hover {
     color: rgb(34, 29, 29);
     margin: 0px;
     padding: 10px 20px 15px 20px;        
-    text-align: center;
+    text-align: center;   
 }
-    
+
 .getinspired {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 3px;
-    border-color: #232521;
-    border-style: solid;
+    align-items: center;    
+    background-color: rgb(220, 245, 218, 1);    
     width: 70%;
-    margin: 40px 15% 40px 15%;        
+    margin: 40px 15% 40px 15%; 
 }
-    
+
 .getinspired__title {
     font-size: 1.5rem;
     font-weight: bold; 
@@ -215,17 +231,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; 
-    width: 100%;        
+    align-items: center;
+    width: 100%;
 }
-    
+
 .offers__conteiner {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;   
 }
-    
+
+   
 .offers__conteinerList {      
     font-size: 1.5rem;
     font-weight: bold; 
@@ -297,9 +314,10 @@ a:hover {
 .message__img {
     width: 100%;    
     height: 50%;        
-    padding: 20px;             
+    padding: 20px;  
+               
 }
-    
+
 .gallery {
     width: 100%;
 }
@@ -325,9 +343,15 @@ a:hover {
     
 .gallery__imgItem {
     padding: 10px;
-    margin: 10px;
-    height: auto;
-    width: 80%;               
+    margin: 10px;    
+    width: 80%;      
+    transition-property: all;
+    transition-duration: 1s;         
+    transition-timing-function: ease-in-out;    
+}
+
+.gallery_imgItem:hover {
+    width: 90%;
 }
     
 .map {
@@ -394,8 +418,9 @@ a:hover {
     text-transform: uppercase;
     margin-top: 40px;
     padding: 10px;    
-    text-align: center;    
+    text-align: center;
 }
+
 
 .footer__enterpriseParagraph {
     font-size: 1.5rem;
@@ -453,7 +478,11 @@ a:hover {
     color: #ffffff;   
     font-size: 2rem;
 }
-    
+
+.footer__contactSocialsListItem:hover {
+    color: rgb(96,188,87) ;
+}
+
 .footer__newsletter {
     display: flex;
     flex-direction: column;
@@ -498,15 +527,26 @@ a:hover {
     margin: 3px;      
 }
 
+.footer__newsletterFormItem:hover {
+    background-color:  rgb(220, 245, 218, 1);
+}
+
 .footer_newsletterFormBtn {
     appearance: button;    
     border: 0 solid #e5e7eb;
     border-radius: .5rem;    
-    font-size: 1.5rem;        
+    font-size: 1.5rem;  
+    font-weight: bold;      
     padding: 2px;
 }
-    
+
+.footer_newsletterFormBtn:hover {
+    background-color: rgb(96,188,87);
+    color:#000000;
+}
+
 /* CSS About us */
+
 .aboutus {
     width: 100%;
     padding: 0px;
@@ -521,8 +561,22 @@ a:hover {
     align-items: center;
     background-color: rgb(220, 245, 218, 1);
     margin: 20px 0px 0px 0px;
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
 }
 
+@keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
 .inspiration__title {
     font-size: 1.5rem;
     font-weight: bold; 
@@ -594,8 +648,18 @@ a:hover {
     padding: 20px;
     background-color: #232521;
     width: 100%;
+    animation: color-change-2x 2s linear infinite alternate both;
 }
-    
+
+@keyframes color-change-2x {
+    0% {
+      background: #4e5555;
+    }
+    100% {
+      background: #232521;
+    }
+}
+  
 .questions__conteinerDivFlexTitle {
     font-size: 1.5rem;
     text-align: center;
@@ -644,8 +708,9 @@ a:hover {
     width: 100%;
     background-color: rgb(220, 245, 218, 1);
     margin-top: 20px;    
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
 }
-    
+
 .programs__title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -672,9 +737,9 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;     
     width: 100%; 
-    margin: 40px 0px 40px 0px;         
+    margin: 40px 0px 40px 0px;            
 }
- 
+
 .programs__list {
     display: flex;
     flex-direction: column;
@@ -682,7 +747,20 @@ a:hover {
     align-items: center;
     background-color: rgb(220, 245, 218, 1);
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.5rem;     
+    margin-bottom: 40px;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .programs__listTitle {
@@ -701,14 +779,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;     
+    align-items: center;  
+    
 }
 
 .programs__listInfoDiv {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;       
+    align-items: center;   
 }
     
 .programs__listInfoItem {
@@ -727,9 +806,10 @@ a:hover {
     align-items: center;
     background-color: rgb(220, 245, 218, 1);
     width: 100%;    
-    margin-top: 20px;      
+    margin-top: 20px;
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;      
 }
-    
+
 .team__title {
     font-size: 1.5rem;
     letter-spacing: 00.25em;
@@ -758,6 +838,20 @@ a:hover {
     margin: 0px;  
     padding: 20px;
     width: 100%;
+    animation: slide-in-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;   
+}
+
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
 }
     
 .founder__conteiner {
@@ -803,9 +897,9 @@ a:hover {
     
 .founder__imgConteinerImg {
     width: 100%;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;    
 }
-    
+  
 .developers {
     display: flex;
     flex-direction: column;
@@ -836,7 +930,21 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;        
-    background-color: rgb(220, 245, 218, 1);       
+    background-color: rgb(220, 245, 218, 1);    
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;   
+}
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
 }
 
 .devs__oliviaConteinerA {
@@ -884,6 +992,7 @@ a:hover {
     background-color: rgb(255, 255, 255); 
     width: 100%;
     margin-top: 20px;  
+    animation: slide-in-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .devs__chiaraConteinerA {
@@ -932,6 +1041,7 @@ a:hover {
     margin-bottom: 40px;         
     background-color: rgb(220, 245, 218, 1);
     width: 100%;
+    animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .devs__filipaConteinerA {
@@ -972,11 +1082,7 @@ a:hover {
 }        
     
     
-/*Contacto CSS*/
-    
-#body {
-    background-color: #ffffff;
-}
+/*Contacto CSS*/  
 
 .contact {
     display: flex;
@@ -984,7 +1090,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;      
     margin-top: 20px; 
-    width: 100%;
+    width: 100%;   
 }
     
 .contact__conteiner {
@@ -994,8 +1100,9 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 40px;
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
 }
 
 .contact__conteinerTitle {
@@ -1027,6 +1134,7 @@ a:hover {
     width: 80%;
     padding: 10px;
     margin: 0px auto 40px auto;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .contact__formItem {
@@ -1069,12 +1177,17 @@ a:hover {
     padding: 0px 18px;    
     outline: 0;
     border: 0;
-    background: #2e2d2d;
-    color: #e5e7eb;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    background: rgb(96,188,87);
+    color: #000000;
     font-size: 1.5rem;
     border-radius: 6px;       
 }
 
+.contact__formButtons:hover {
+    background-color: rgb(158, 239, 171);
+}
 
 @media only screen and (min-width: 550px) and (max-width: 1022px) {   
         
@@ -1173,6 +1286,13 @@ a:hover {
         
 .gallery__imgItem {
     width: 60%;
+    transition-property: all;
+    transition-duration: 1s;         
+    transition-timing-function: ease-in-out;  
+}
+
+.gallery__imgItem:hover {
+    width: 80%;
 }
        
 .map__title {
@@ -1288,7 +1408,11 @@ a:hover {
     font-size: 2rem;      
     padding: 40px 20px 10px 20px;        
 }
-        
+
+.programs__listInfo {
+    width: 70%;
+}
+
 .programs__listInfoItem {
     font-size: 2rem;       
 }
@@ -1543,6 +1667,14 @@ a:hover {
 .gallery__imgItem {      
     width: 450px;
     height: 350px;
+    transition-property: all;
+    transition-duration: 1s;         
+    transition-timing-function: ease-in-out;   
+}
+
+.gallery__imgItem:hover {
+    width: 550px;
+    height: 450px;
 }
 
 .map__title {
@@ -1663,6 +1795,9 @@ a:hover {
     width: 60%;        
 }
 
+.programs__listInfo {
+    width: 70%;
+}
 .programs__listTitle {
     font-size: 2rem;        
     padding: 40px 20px 10px 20px;       
