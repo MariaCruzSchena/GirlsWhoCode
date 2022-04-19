@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Girls who Code - EQUIPO </title>
+        <title>Girls who Code - EQUIPO</title>
+        <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="./../assets/css/style.css">
         <script src="https://use.fontawesome.com/cd8c795169.js"></script>
     </head>
@@ -12,12 +13,7 @@
         <div class="gridConteiner">
             <header class="header">           
                 <h1><a class="header__logo" href="./../index.html">Girls who Code</Girls></a></h1>                     
-                <nav class="header__nav">                 
-                    <a href="#" class="toggle-button">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </a>                        
+                <nav class="header__nav">                                         
                     <ul class="nav__list">
                         <li class="nav__listItem"><a href="./../index.html" >Inicio</a></li>
                         <li class="nav__listItem"><a href="./nosotros.html">Nosotros</a></li>
@@ -26,90 +22,107 @@
                         <li class="nav__listItem"><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menú</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <ul class="offcanvas__list">
+                        <li class="offcanvas__listItem"><a href="./../index.html">Inicio</a></li>
+                        <li class="offcanvas__listItem"><a href="./nosotros.html">Nosotros</a></li>
+                        <li class="offcanvas__listItem"><a href="./programas.html">Programas</a></li>
+                        <li class="offcanvas__listItem"><a href="./equipo.html">Equipo</a></li>                    
+                        <li class="offcanvas__listItem"><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
             </header>
             <main id="main">
                 <section>                   
-                    <div class="team">
+                    <div class="intro">
                         <a class="linkFooter" href="#footer">Ir al pie de página</a>
-                        <h2 class="team__title">Equipo</h2>
-                        <p class="team__paragraph"> Conoce al equipo de mujeres que trabaja para cerrar la brecha de género en el mundo de la tecnología</p>
+                        <h2 class="title">Equipo</h2>
+                        <p class="paragraph"> Conoce al equipo de mujeres que trabaja para cerrar la brecha de género en el mundo de la tecnología</p>
                     </div>
-                    <div class="founder">
-                        <div class="founder__conteiner">
-                            <h2 class="founder__conteinerTitle">Nuestra fundadora</h2>
-                            <h3 class="founder__conteinerName">Eugenia Dekker</h3>
-                            <p class="founder__conteinerParagraph">Eugenia es una modelo, diseñadora de moda y activista Argentina, de 33 años. A sus 27 años, comenzó a incursionar en el mundo de la tecnologia, impulsada por su curiosidad. Se sumergió en un mundo nuevo, dominado por hombres y luego de un año de aprendizaje, decidió hacer algo al respecto. Así surgio "Girls who Code", una plataforma de aprendizaje, y como ella la define: un movimiento; en el que mujeres en el rubro puedan acercar al género femenino al mundo de la tecnología y brindarles las herramientas para que puedan alcanzar su máximo potencial, desempeñarse como programadoras y contribuir a cerrar la brecha de género en este ambito.</p>
+                    <div class="conteiner--right">
+                        <div class="conteiner__rightA">
+                            <h2 class="title">Nuestra fundadora</h2>
+                            <h3 class="name">Eugenia Dekker</h3>
+                            <p class="devs__paragraph">Eugenia es una modelo, diseñadora de moda y activista Argentina, de 33 años. A sus 27 años, comenzó a incursionar en el mundo de la tecnologia, impulsada por su curiosidad. Se sumergió en un mundo nuevo, dominado por hombres y luego de un año de aprendizaje, decidió hacer algo al respecto. Así surgio "Girls who Code", una plataforma de aprendizaje, y como ella la define: un movimiento; en el que mujeres en el rubro puedan acercar al género femenino al mundo de la tecnología y brindarles las herramientas para que puedan alcanzar su máximo potencial, desempeñarse como programadoras y contribuir a cerrar la brecha de género en este ambito.</p>
                         </div>
-                        <div class="founder__imgConteiner">
-                            <img class="founder__imgConteinerImg" src="./../assets/img/founder.webp" alt="Eugenia Dekker">
+                        <div class="conteiner__rightB">
+                            <img class="devs__img" src="./../assets/img/founder.webp" alt="Eugenia Dekker">
                         </div>
                     </div>
                     <div class="developers">
-                        <h2 class="developers__title">Nuestras developers</h2> 
+                        <h2 class="title">Nuestras developers</h2> 
                     </div>
                     <div class="devs">
-                            <div class="devs__olivia">
-                                <div class="devs__oliviaConteinerA">
-                                    <h3 class="devs__oliviaConteinerATitle">Olivia Pérez</h3>                            
-                                    <p class="devs__oliviaConteinerAParagraph">Olivia es una Full stack developer de 27 años, que actualmente se encuentra trabajando para Avalanche Software. Fanática de los videojuegos y curiosa por naturaleza, comenzo a aprender a programar a sus 12 años, cuando se dio cuenta de que habia una persona detras de sus juegos favoritos. Su ultimo proyecto fue el desarrollo de "Hogwarts Legacy".</p>
+                            <div class="conteiner--left">
+                                <div class="conteiner__leftA">
+                                    <h3 class="name">Olivia Pérez</h3>                            
+                                    <p class="devs__paragraph">Olivia es una Full stack developer de 27 años, que actualmente se encuentra trabajando para Avalanche Software. Fanática de los videojuegos y curiosa por naturaleza, comenzo a aprender a programar a sus 12 años, cuando se dio cuenta de que habia una persona detras de sus juegos favoritos. Su ultimo proyecto fue el desarrollo de "Hogwarts Legacy".</p>
                                 </div>
-                                <div class="devs__oliviaConteinerB">
-                                    <img class="devs__oliviaConteinerBImg" src="./../assets/img/mujer1.jpg" alt="Olivia Perez"> 
-                                </div>
-                            </div>
-                            <div class="devs__chiara">
-                                <div class="devs__chiaraConteinerA">
-                                    <h3 class="devs__chiaraConteinerATitle">Chiara Ferrari</h3>                            
-                                    <p class="devs__chiaraConteinerAParagraph">Chiara es Full-stack developer. Encontro su pasión por la programación a los 26, cuando estaba en su ultimo año de carrera, estudiando Licenciatura en Nutrición. Hoy se encuentra trabajando para The Disney Company, programando animatronics. Su ultimo proyecto fue la programación de los animatronics del Hotel Star Wars: Galactic Starcruiser, ubicado en Epcot Resort Area de Walt Disney World Resort en Bay Lake, Florida.</p>
-                                </div>
-                                <div  class="devs__chiaraConteinerB">
-                                    <img class="devs__chiaraConteinerBImg" src="./../assets/img/mujer2.jpg" alt="Chiara Ferrari">
+                                <div class="conteiner__leftB">
+                                    <img class="devs__img" src="./../assets/img/mujer1.jpg" alt="Olivia Perez"> 
                                 </div>
                             </div>
-                            <div class="devs__filipa">
-                                <div class="devs__filipaConteinerA">
-                                    <h3 class="devs__filipaConteinerATitle">Filipa Russo</h3>                           
-                                    <p class="devs__filipaConteinerAParagraph">Filipa es una Back-end developer. Tiene 33 años y empezo a programar a los 30. ¿Su lema?: "Nunca es tarde para volver a empezar". Durante 7 años trabajo como contadora en una multinacional. Hoy es dueña de su propio emprendimiento, y vende programas para facilitar las tareas operativas en contaduría </p>
+                            <div class="conteiner--right">
+                                <div class="conteiner__rightA">
+                                    <h3 class="name">Chiara Ferrari</h3>                            
+                                    <p class="devs__paragraph">Chiara es Full-stack developer. Encontro su pasión por la programación a los 26, cuando estaba en su ultimo año de carrera, estudiando Licenciatura en Nutrición. Hoy se encuentra trabajando para The Disney Company, programando animatronics. Su ultimo proyecto fue la programación de los animatronics del Hotel Star Wars: Galactic Starcruiser, ubicado en Epcot Resort Area de Walt Disney World Resort en Bay Lake, Florida.</p>
                                 </div>
-                                <div class="devs__filipaConteinerB">
-                                    <img class="devs__filipaConteinerBImg" src="./../assets/img/mujer 3.jpg" alt="Filippa Russo">
+                                <div  class="conteiner__rightB">
+                                    <img class="devs__img" src="./../assets/img/mujer2.jpg" alt="Chiara Ferrari">
+                                </div>
+                            </div>
+                            <div class="conteiner--left">
+                                <div class="conteiner__leftA">
+                                    <h3 class="name">Filipa Russo</h3>                           
+                                    <p class="devs__paragraph">Filipa es una Back-end developer. Tiene 33 años y empezo a programar a los 30. ¿Su lema?: "Nunca es tarde para volver a empezar". Durante 7 años trabajo como contadora en una multinacional. Hoy es dueña de su propio emprendimiento, y vende programas para facilitar las tareas operativas en contaduría </p>
+                                </div>
+                                <div class="conteiner__leftB">
+                                    <img class="devs__img" src="./../assets/img/mujer 3.jpg" alt="Filippa Russo">
                                 </div>
                             </div>                    
                     </div>
                 </section>           
             </main>   
-            <footer id="footer">
-                <div class="footer__conteiner">
-                    <div class="footer__enterprise">
-                        <h3 class="footer__enterpriseTitle">GIRLS WHO CODE</h3>
-                        <p class="footer__enterpriseParagraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
-                    </div>
-                    <div class="footer__contact">
-                        <h3 class="footer__contactTitle">CONTACTANOS</h3>
-                        <p class="footer__contactAdress">Avenida Libertador 1550. Piso 7.</p>
-                        <p class="footer__contactTel">+54 (011)15544191</p>
-                        <div class="footer__contactSocials">
-                            <ul class="footer__contactSocialsList">
-                                <li><a class="footer__contactSocialsListItem" href="https://www.facebook.com/GirlsWhoCode/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a class="footer__contactSocialsListItem" href="https://www.instagram.com/girlswhocode/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a></li> 
-                                <li><a class="footer__contactSocialsListItem" href="https://twitter.com/GirlsWhoCode?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a  class="footer__contactSocialsListItem" href="https://www.youtube.com/user/girlswhocode" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-                                <li><a class="footer__contactSocialsListItem" href="https://www.linkedin.com/school/girlswhocode/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__newsletter"> 
-                        <h3 class="footer__newsletterTitle">NUESTRO NEWSLETTER</h3>
-                        <p class="footer__newsletterParagraph"> Si te interesa estar al tanto de las novedades, suscribite:</p>
-                        <div class="footer__newsletterForm">
-                            <form action="">
-                                <input class="footer__newsletterFormItem" type="email" id="email" placeholder="ejemplo@ejemplo.com">
-                                <input class="footer_newsletterFormBtn" type="button" value="Enviar">    
-                            </form>
-                        </div>           
+            <div class="footer__conteiner">
+                <div class="footer__div">
+                    <h3 class="footer__title">GIRLS WHO CODE</h3>
+                    <p class="footer__paragraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
+                </div>
+                <div class="footer__div">
+                    <h3 class="footer__title">CONTACTANOS</h3>
+                    <p class="footer__paragraph">Avenida Libertador 1550. Piso 7.</p>
+                    <p class="footer__paragraph">+54 (011)15544191</p>
+                    <div class="footer__socials">
+                        <ul class="footer__socialsList">
+                            <li><a class="footer__socialsItem" href="https://www.facebook.com/GirlsWhoCode/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a class="footer__socialsItem" href="https://www.instagram.com/girlswhocode/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                            <li><a class="footer__socialsItem" href="https://twitter.com/GirlsWhoCode?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a  class="footer__socialsItem" href="https://www.youtube.com/user/girlswhocode" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+                            <li><a class="footer__socialsItem" href="https://www.linkedin.com/school/girlswhocode/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+                <div class="footer__div"> 
+                    <h3 class="footer__title">NUESTRO NEWSLETTER</h3>
+                    <p class="footer__paragraph"> Si te interesa estar al tanto de las novedades, suscribite:</p>
+                    <div >
+                        <form class="footer__form" action="#">
+                            <input class="footer__formItem" type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                            <input class="footer_formBtn" type="button" value="Enviar">    
+                        </form>
+                    </div>           
+                </div>
+            </div>
+        </footer>  
         </div>
+        <script src="./../assets/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Girls who Code - NOSOTROS</title>
+        <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="./../assets/css/style.css">
         <script src="https://use.fontawesome.com/cd8c795169.js"></script>
     </head>
@@ -12,12 +13,7 @@
         <div class="gridConteiner">
             <header class="header">       
                 <h1><a class="header__logo" href="./../index.html">Girls who Code</Girls></a></h1>                       
-                <nav class="header__nav">                   
-                    <a href="#" class="toggle-button">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </a>                        
+                <nav class="header__nav">                                          
                     <ul class="nav__list">
                         <li class="nav__listItem"><a href="./../index.html" >Inicio</a></li>
                         <li class="nav__listItem"><a href="./nosotros.html">Nosotros</a></li>
@@ -26,13 +22,30 @@
                         <li class="nav__listItem"><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menú</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <ul class="offcanvas__list">
+                        <li class="offcanvas__listItem"><a href="./../index.html">Inicio</a></li>
+                        <li class="offcanvas__listItem"><a href="./nosotros.html">Nosotros</a></li>
+                        <li class="offcanvas__listItem"><a href="./programas.html">Programas</a></li>
+                        <li class="offcanvas__listItem"><a href="./equipo.html">Equipo</a></li>                    
+                        <li class="offcanvas__listItem"><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
             </header>
             <main id="main">       
                 <section class="aboutus">          
-                    <div class="inspiration">
+                    <div class="intro">
                         <a class="linkFooter" href="#footer">Ir al pie de página</a> 
-                        <h2 class="inspiration__title">"NUESTRA MISIÓN ES CERRAR LA BRECHA DE GÉNERO EN LA TECNOLOGÍA."</h2>
-                        <p class="inspiration__paragraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
+                        <h2 class="title">"NUESTRA MISIÓN ES CERRAR LA BRECHA DE GÉNERO EN LA TECNOLOGÍA."</h2>
+                        <p class="paragraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
                     </div>
                 </section>
                 <section class="questions">
@@ -74,38 +87,38 @@
                     </div>
                 </section>            
             </main>  
-            <footer id="footer">
-                <div class="footer__conteiner">
-                    <div class="footer__enterprise">
-                        <h3 class="footer__enterpriseTitle">GIRLS WHO CODE</h3>
-                        <p class="footer__enterpriseParagraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
-                    </div>
-                    <div class="footer__contact">
-                        <h3 class="footer__contactTitle">CONTACTANOS</h3>
-                        <p class="footer__contactAdress">Avenida Libertador 1550. Piso 7.</p>
-                        <p class="footer__contactTel">+54 (011)15544191</p>
-                        <div class="footer__contactSocials">
-                            <ul class="footer__contactSocialsList">
-                                <li><a class="footer__contactSocialsListItem" href="https://www.facebook.com/GirlsWhoCode/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a class="footer__contactSocialsListItem" href="https://www.instagram.com/girlswhocode/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a></li> 
-                                <li><a class="footer__contactSocialsListItem" href="https://twitter.com/GirlsWhoCode?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a  class="footer__contactSocialsListItem" href="https://www.youtube.com/user/girlswhocode" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-                                <li><a class="footer__contactSocialsListItem" href="https://www.linkedin.com/school/girlswhocode/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__newsletter"> 
-                        <h3 class="footer__newsletterTitle">NUESTRO NEWSLETTER</h3>
-                        <p class="footer__newsletterParagraph"> Si te interesa estar al tanto de las novedades, suscribite:</p>
-                        <div class="footer__newsletterForm">
-                            <form action="">
-                                <input class="footer__newsletterFormItem" type="email" id="email" placeholder="ejemplo@ejemplo.com">
-                                <input class="footer_newsletterFormBtn" type="button" value="Enviar">    
-                            </form>
-                        </div>           
+            <div class="footer__conteiner">
+                <div class="footer__div">
+                    <h3 class="footer__title">GIRLS WHO CODE</h3>
+                    <p class="footer__paragraph">Girls who Code es una empresa social que brinda a niñas y mujeres la confianza, las herramientas, el conocimiento y el apoyo necesarios para ingresar y prosperar en el mundo de la codificación.</p>
+                </div>
+                <div class="footer__div">
+                    <h3 class="footer__title">CONTACTANOS</h3>
+                    <p class="footer__paragraph">Avenida Libertador 1550. Piso 7.</p>
+                    <p class="footer__paragraph">+54 (011)15544191</p>
+                    <div class="footer__socials">
+                        <ul class="footer__socialsList">
+                            <li><a class="footer__socialsItem" href="https://www.facebook.com/GirlsWhoCode/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a class="footer__socialsItem" href="https://www.instagram.com/girlswhocode/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a></li> 
+                            <li><a class="footer__socialsItem" href="https://twitter.com/GirlsWhoCode?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a  class="footer__socialsItem" href="https://www.youtube.com/user/girlswhocode" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+                            <li><a class="footer__socialsItem" href="https://www.linkedin.com/school/girlswhocode/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </footer>
+                <div class="footer__div"> 
+                    <h3 class="footer__title">NUESTRO NEWSLETTER</h3>
+                    <p class="footer__paragraph"> Si te interesa estar al tanto de las novedades, suscribite:</p>
+                    <div >
+                        <form class="footer__form" action="#">
+                            <input class="footer__formItem" type="email" id="email" placeholder="ejemplo@ejemplo.com">
+                            <input class="footer_formBtn" type="button" value="Enviar">    
+                        </form>
+                    </div>           
+                </div>
+            </div>
+        </footer>  
         </div>
+        <script src="./../assets/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
