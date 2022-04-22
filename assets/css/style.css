@@ -184,7 +184,7 @@ a:hover {
     align-items: center;
     width: 100%;
     background-color:  rgb(220, 245, 218, 1);   
-    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;       
+    animation: slide-in-bottom 2s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;         
 }
 
 @keyframes slide-in-bottom {
@@ -426,25 +426,28 @@ a:hover {
     
 .footer__formItem {
     font-size: 1.5rem;        
-    margin: 3px;      
+    margin: 3px;  
+    border: none;    
 }
 
 .footer__formItem:hover {
-    background-color:  rgb(220, 245, 218, 1);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255); 
 }
 
-.footer_formBtn {
-    appearance: button;    
-    border: 0 solid #e5e7eb;
+.footer_formBtn {     
+    border: none;
+    background: none;
     border-radius: .5rem;    
     font-size: 1.5rem;  
     font-weight: normal;      
-    padding: 2px;
+    padding: 2px;     
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(136, 127, 127);
+    color: #fff;
 }
 
-.footer_formBtn:hover {
-    background-color: rgb(96,188,87);
-    color:#000000;
+.footer_formBtn:hover {    
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);    
 }
 
 /* CSS About us */
@@ -619,7 +622,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 255, 255);      
-    padding: 20px;
+    margin: 20px 0px 20px 0px;
     width: 100%;
     animation: slide-in-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;   
 }
@@ -694,6 +697,8 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;        
+    margin-bottom: 20px;
+    padding-top: 20px;
     background-color: rgb(220, 245, 218, 1);    
     animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;   
 }
@@ -790,15 +795,14 @@ a:hover {
     outline: 0;
     border: 0;
     cursor: pointer;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-    background: rgb(96,188,87);
+    box-shadow: 0px 0px 5px rgb(28, 30, 28);    
     color: #000000;
     font-size: 1.5rem;
     border-radius: 6px;       
 }
 
-.contact__formButtons:hover {
-    background-color: rgb(158, 239, 171);
+.contact__formButtons:hover {    
+    box-shadow: 0px 0px 10px rgb(55, 195, 183); 
 }
 
 .form-select {
@@ -851,21 +855,6 @@ a:hover {
 }
 
 .offcanvas {
-    display: none;
-}
-
-.mision {
-    height: 300px;   
-    width: 100%;
-    background-image: url(./../img/girlscoding.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;    
-    margin-top: 0px;
-    padding-top: 0px; 
-}
-
-.misionImg{
     display: none;
 }
 
@@ -1086,6 +1075,10 @@ a:hover {
     display: none;
 }
 
+.intro {
+    margin-bottom: 20px;
+}
+
 .title {
     font-size: 2rem;
 }
@@ -1118,7 +1111,7 @@ a:hover {
     flex-direction: column;      
     justify-content: flex-start;
     align-items: center;
-    min-width: 200px;
+    /*min-width: 200px;*/
 }
 
 .offers__conteinerParagraph {    
@@ -1234,7 +1227,9 @@ a:hover {
 
 .conteiner--right {
     display: flex;
-    flex-direction: row;               
+    flex-direction: row;
+    padding: 20px;  
+    margin: 0px;             
 }
 
 .conteiner__rightA {       
@@ -1256,7 +1251,7 @@ a:hover {
 }    
 
 .devs__img {
-    padding: 0px 10px 0px 10px;  
+    padding: 0px; 
     
 }
 
@@ -1266,7 +1261,9 @@ a:hover {
 
 .conteiner--left {
     display: flex;
-    flex-direction: row-reverse;            
+    flex-direction: row-reverse;  
+    padding: 20px;
+    margin: 0px;          
          
 }
 
@@ -1276,7 +1273,7 @@ a:hover {
 
 .conteiner__leftB {          
     width: 50%;  
-    padding: 20px;
+    
 }
 
 /*Contacto CSS*/
