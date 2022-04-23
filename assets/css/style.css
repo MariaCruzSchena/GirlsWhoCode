@@ -6,7 +6,7 @@
     font-size: 62.5%;      
 }
 
-.gridConteiner{
+.gridConteiner {
     width: 100vw;
     padding: 0px;
     margin: 0px;
@@ -77,7 +77,7 @@
     width: 100%;
 }
 
-.nav__list {
+.header__nav__list {
     width: 100%;        
     font-weight: bold;
     text-decoration: none;
@@ -90,11 +90,11 @@
     margin: 0px;
 }
     
-.nav__list:active {
+.header__nav__list:active {
     display: flex;
 }
 
-.nav__listItem {
+.header__nav__list__item {
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.20em;   
@@ -103,7 +103,7 @@
     text-align: center;      
 }
 
-.nav__listItem:visited {
+.header__nav__list__item:visited {
     background-color: #2e2d2d;
 }
 
@@ -150,7 +150,7 @@ a:hover {
     font-size: 1rem;  
 }
 
-.offcanvas__listItem {
+.offcanvas__item {
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
     font-weight: bold;
@@ -172,7 +172,7 @@ a:hover {
     width: 100%;   
 }
 
-.misionImg {
+.mision__img {
     width: 100%;
     height: auto;
 }
@@ -255,7 +255,7 @@ a:hover {
     align-items: center;   
 }
     
-.offers__conteinerParagraph {    
+.offers__paragraph {    
     font-size: 1.2rem;
     font-weight: normal;
     text-align: justify;
@@ -274,7 +274,7 @@ a:hover {
     margin-bottom: 40px;
 }
     
-.messageConteiner {
+.message__conteiner {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -283,7 +283,7 @@ a:hover {
 } 
 
 
-.messageConteiner__paragraph {
+.message__conteiner__paragraph {
     font-size: 1.5rem;    
     text-decoration: none;
     font-weight: bold;    
@@ -294,7 +294,7 @@ a:hover {
     text-align: justify;
 }
     
-.messageConteiner__sign {
+.message__conteiner__sign {
     font-family: Parisienne;
     font-style: bold;
     font-size: 1.5rem;
@@ -396,7 +396,7 @@ a:hover {
     padding: 5px;  
 }
 
-.footer__socialsList {
+.footer__socials__list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -404,13 +404,13 @@ a:hover {
     align-items: center;       
 }
     
-.footer__socialsItem {
+.footer__socials__list__item {
     padding: 5px;
     color: #ffffff;   
     font-size: 2rem;
 }
 
-.footer__socialsListItem:hover {
+.footer__socials__list__item:hover {
     color: rgb(96,188,87);
 }
     
@@ -424,17 +424,17 @@ a:hover {
     text-align: center;
 }
     
-.footer__formItem {
+.footer__form__item {
     font-size: 1.5rem;        
     margin: 3px;  
     border: none;    
 }
 
-.footer__formItem:hover {
+.footer__form__item:hover {
     box-shadow: 0px 0px 5px rgb(255, 255, 255); 
 }
 
-.footer_formBtn {     
+.footer_form__btn {     
     border: none;
     background: none;
     border-radius: .5rem;    
@@ -446,7 +446,7 @@ a:hover {
     color: #fff;
 }
 
-.footer_formBtn:hover {    
+.footer_form__btn:hover {    
     box-shadow: 0px 0px 5px rgb(255, 255, 255);    
 }
 
@@ -472,27 +472,27 @@ a:hover {
     align-items: center;    
 }
     
-.questions__conteinerTitle {
+.questions__conteiner__title {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
     margin: 0px;
 }
     
-.questions__conteinerParagraph {
+.questions__conteiner__paragraph {
     text-align: justify;
     font-size: 1.2rem;
     padding: 20px;
 }
     
-.questions__conteinerParagraphValores {
+.questions__conteiner__paragraph__valores {
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 20px;
     margin-bottom: 20px;
 }
     
-.questions__conteinerDiv {
+.questions__conteiner__div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -500,7 +500,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.questions__conteinerDivFlex {
+.questions__conteiner__div__flex {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -520,7 +520,7 @@ a:hover {
     }
 }
   
-.questions__conteinerDivFlexTitle {
+.questions__conteiner__div__flex__title {
     font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
@@ -529,14 +529,14 @@ a:hover {
     padding: 5px;
 }
     
-.questions__conteinerDivFlexItem {
+.questions__conteiner__div__flex__item {
     font-size: 1.2rem;
     text-align: center;
     color: #ffffff;
     width: 60%;   
 }
     
-.questions__conteinerDivFlexImg {
+.questions__conteiner__div__flex__img {
     width: 100px;
     height: 100px;
 }
@@ -548,7 +548,7 @@ a:hover {
     align-items: center;
 }
 
-.quote__conteinerTitle {
+.quote__conteiner__title {
     font-size: 2rem;    
     line-height: 2em;
     color: rgb(34, 29, 29);
@@ -754,7 +754,7 @@ a:hover {
     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.contact__formItem {
+.contact__form__item {
     width: 80%;
     margin: auto;
     padding: 5px;
@@ -763,18 +763,15 @@ a:hover {
     border-radius: 5px;    
 }
     
-.contact__formItemLabel {
+.contact__form__item__label {
     font-size: 1.5rem;
     text-align: center;
     display: block;
     padding: 10px;
-}
-    
-.contact__formItemName {
-    font-size: 1.5rem; 
-}
+}    
 
-.contact__formItemInput {
+
+.contact__form__item__input {
     width: 100%;
     display: inline-block;
     padding: 10px 0;
@@ -787,7 +784,7 @@ a:hover {
     text-align: center;
 }
     
-.contact__formButtons {
+.contact__form__buttons {
     display: block;
     margin: auto;    
     margin-bottom: 10px;
@@ -801,7 +798,7 @@ a:hover {
     border-radius: 6px;       
 }
 
-.contact__formButtons:hover {    
+.contact__form__buttons:hover {    
     box-shadow: 0px 0px 10px rgb(55, 195, 183); 
 }
 
@@ -833,7 +830,7 @@ a:hover {
     margin-top: 20px;                        
 }
   
-.nav__list {   
+.header__nav__list {   
     font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;        
     margin: 0px;
     padding: 0px 10px 10px 10px;           
@@ -844,7 +841,7 @@ a:hover {
     list-style: none;    
 }
 
-.nav__listItem {
+.header__nav__list__item {
     font-size: 2rem;        
     padding-right: 20px;  
     text-decoration: none;          
@@ -880,7 +877,7 @@ a:hover {
 }        
 
         
-.offers__conteinerParagraph {    
+.offers__paragraph {    
     font-size: 2rem; 
     font-weight: normal;       
 }
@@ -889,14 +886,14 @@ a:hover {
    margin-top: 20px;
 }
 
-.messageConteiner__paragraph {
+.message__conteiner__paragraph {
     font-size: 2rem;        
     line-height: 40px;           
     margin: 0px 30px 0px 30px;        
     width: 80%;
 }
 
-.messageConteiner__sign {
+.message__conteiner__sign {
     font-size: 2rem;       
 }
 
@@ -929,31 +926,31 @@ a:hover {
 
 /* CSS About us */
 
-.questions__conteinerTitle {
+.questions__conteiner__title {
     font-size: 2rem;    
 }
         
-.questions__conteinerParagraph {     
+.questions__conteiner__paragraph {     
     font-size: 2rem;        
 }
         
-.questions__conteinerParagraphValores{   
+.questions__conteiner__paragraph__valores{   
     font-size: 2rem;       
 }
 
-.questions__conteinerDivFlex { 
+.questions__conteiner__div__flex { 
     width: 60%;
 }
         
-.questions__conteinerDivFlexTitle {
+.questions__conteiner__div__flex__title {
     font-size: 2rem;    
 }
         
-.questions__conteinerDivFlexItem {
+.questions__conteiner__div__flex__item {
     font-size: 2rem;       
 }
 
-.quote__conteinerTitle {
+.quote__conteiner__title {
     font-size: 3rem;        
 }
 
@@ -986,19 +983,19 @@ a:hover {
         
 /*Contacto CSS*/ 
 
-.contact__formItemLabel {
+.contact__form__item__label {
     font-size: 2rem;        
 }
     
-.contact__formItemName {
+.contact__form__item__name {
     font-size: 1.8rem; 
 }
 
-.contact__formItemInput {       
+.contact__form__item__input {       
     font-size: 1.6rem;       
 }
         
-.contact__formButtons {        
+.contact__form__buttons {        
     font-size: 1.8rem;        
 }
 
@@ -1035,7 +1032,7 @@ a:hover {
     font-size: 4rem;    
 }
 
-.nav__list {   
+.header__nav__list {   
     font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;        
     margin: 0px;
     padding-right: 0px 10px 10px 10px;           
@@ -1046,7 +1043,7 @@ a:hover {
     list-style: none;    
 }
 
-.nav__listItem {
+.header__nav__list__item {
     font-size: 2.5rem;        
     padding-right: 20px;  
     text-decoration: none;          
@@ -1071,7 +1068,7 @@ a:hover {
     padding-top: 0px; 
 }
     
-.misionImg{
+.mision__img{
     display: none;
 }
 
@@ -1114,7 +1111,7 @@ a:hover {
     /*min-width: 200px;*/
 }
 
-.offers__conteinerParagraph {    
+.offers__paragraph {    
     font-size: 2rem;   
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;   
@@ -1129,19 +1126,19 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.messageConteiner {    
+.message__conteiner {    
     justify-content: space-evenly;
     width: 45%;
     overflow-x: hidden !important;
 }
     
-.messageConteiner__paragraph {
+.message__conteiner__paragraph {
     font-size: 2rem;   
     line-height: 40px;          
     padding: 10px;        
 }
 
-.messageConteiner__sign {    
+.message__conteiner__sign {    
     font-size: 2rem;  
     
 }
@@ -1176,33 +1173,33 @@ a:hover {
     width: 70%;       
 }
 
-.questions__conteinerTitle {
+.questions__conteiner__title {
     font-size: 2.5rem;  
 }
 
-.questions__conteinerParagraph {
+.questions__conteiner__paragraph {
     font-size: 1.8rem;
     width: 70%;
 }
 
-.questions__conteinerParagraphValores {
+.questions__conteiner__paragraph__valores {
     width: 50%;       
     font-size: 1.8rem;     
 }
 
-.questions__conteinerDivFlex {      
+.questions__conteiner__div__flex {      
     width: 40%;        
 }
 
-.questions__conteinerDivFlexTitle {
+.questions__conteiner__div__flex__title {
     font-size: 2rem;        
 }
 
-.questions__conteinerDivFlexItem {
+.questions__conteiner__div__flex__item {
     font-size: 1.8rem;       
 }
 
-.quote__conteinerTitle {
+.quote__conteiner__title {
     font-size: 4rem;       
     padding: 30px;
     margin: 30px;
@@ -1282,25 +1279,25 @@ a:hover {
     width: 100%;
 }
 
-.contact__formItem {
+.contact__form__item {
     width: 100%;        
     font-size: 2rem;  
 }
 
-.contact__formItemLabel {
+.contact__form__item__label {
     font-size: 2rem;      
 }
 
-.contact__formItemName {
+.contact__form__item__name {
     font-size: 1.8rem; 
 }
 
-.contact__formItemInput {        
+.contact__form__item__input {        
     font-size: 1.6rem;
     margin-bottom: 30px;
 }
 
-.contact__formButtons {    
+.contact__form__buttons {    
     font-size: 1.8rem;       
 }
 
