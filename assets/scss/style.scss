@@ -24,6 +24,7 @@
     "footer"; 
     overflow-x: hidden !important;        
 }
+
 /*Comienza seccion header*/ 
 .header {
     height: fit-content;
@@ -88,6 +89,7 @@
             &:active {
                 display: flex;
             }
+             
             
             &__item {
                 font-family:  $text-font-family;
@@ -99,7 +101,9 @@
                 
                 &:visited {
                     background-color: $header-background-color;
-                }
+                }                
+
+               
             }          
 
         }          
@@ -110,18 +114,23 @@
 
 a {
     text-decoration: none;  
+    color: $text-font-color;
 
     &:visited {
         color: $header-font-color;
     }
     
     &:hover {
-        color: hover-color;
+        color: $hover-color;
+        transition: .5s;
+        
     }    
 }
 
 .offcanvas {
     background-color: $header-background-color;
+    opacity: 95%; 
+   
 }
 
 .btn-primary {
@@ -138,6 +147,7 @@ a {
     background-color:  $hover-color;
     border-color:  $hover-color;
     box-shadow: none;
+    transition: .5s;
 }
 
 #offcanvasRightLabel {
@@ -325,13 +335,6 @@ a {
 }   
   
  /*Comienza seccion footer*/   
-.linkFooter {
-    font-size: map-get($font-size, "xx-small");
-    display: block;
-    background-color: $background-color;
-    color: $title-font-color;                     
-    width: 100%;       
-}
     
 #footer {
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", "sans-serif";
@@ -361,7 +364,7 @@ a {
 }
   
 .footer__paragraph {
-    @extend .footer__title; /*extend*/
+    @extend .footer__title; 
     text-transform: none;
     font-weight: normal;   
     padding: 0px 20px;
@@ -373,11 +376,14 @@ a {
     color: white;
     margin: 5px;
     padding: 5px; 
+    
 }
   
 .footer__socials__list {
     list-style-type: none;
     @include flex (row,  center);
+    margin: 0px;
+    padding: 0px;
    
 }
   
@@ -387,6 +393,7 @@ a {
     font-size: map-get($font-size, "large"); 
     &:hover {
         color: #60bc57; 
+        transition: .5s;
     }
 }  
 
@@ -402,13 +409,27 @@ a {
 
     &__item {
         font-size: map-get($font-size, "small");
+        font-family: $text-font-family;
         margin: 3px;
         border: none; 
+
         &:hover {
             box-shadow: 0px 0px 5px white; 
+            transition: .5s;
         }
-    }    
 
+        &::placeholder{
+            text-align: center;
+            font-size: map-get($font-size , "x-small");
+            font-family: $text-font-family;            
+        }
+
+        &:focus{
+            border: none;
+            background-color: #ffffff;
+        }
+    
+    }    
       
     &__btn {
         border: none;
@@ -422,6 +443,7 @@ a {
         color: white;
         &:hover {
             box-shadow: 0px 0px 5px white; 
+            transition: .5s;
         }
     }     
     
@@ -680,7 +702,7 @@ a {
                 border-bottom: 1px solid rgb(49, 47, 47);
                 outline: none;
                 background: transparent;
-                text-align: center;
+                text-align: center;                
             }
         }
 
@@ -692,13 +714,15 @@ a {
             outline: 0;
             border: 0;
             cursor: pointer;
-            box-shadow: 0px 0px 5px rgb(28, 30, 28);    
-            color: #000000;
+            box-shadow: 0px 0px 4px rgb(154, 159, 154);    
+            color: #413a3a;
             font-size: map-get($font-size, "small");
-            border-radius: 6px;      
+            border-radius: 6px;  
+            
             
             &:hover {    
                 box-shadow: 0px 0px 10px rgb(55, 195, 183); 
+                transition: .5s;
             }
         }
     }
@@ -852,7 +876,7 @@ a {
     font-size: map-get($font-size, "large");       
 }
 
-/* Programas CSS */    
+/* Programas CSS */   
 
 
 .list__info {
@@ -862,6 +886,7 @@ a {
 .info__item {
     font-size: map-get($font-size, "large");        
 }
+
 
 /*Equipo CSS*/       
      
@@ -931,7 +956,9 @@ a {
         &__item {
             font-size: map-get($font-size, "x-large");        
             padding-right: 20px;  
-            text-decoration: none;          
+            text-decoration: none; 
+            
+            
         }    
     }   
     
@@ -1107,6 +1134,7 @@ a {
     font-size: map-get($font-size, "large"); 
 }
 
+
 /*Equipo CSS*/
 
 .conteiner--right {
@@ -1153,6 +1181,7 @@ a {
 .conteiner__leftB {          
     width: 50%;    
 }
+
 
 /*Contacto CSS*/
 
