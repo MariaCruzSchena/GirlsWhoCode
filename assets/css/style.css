@@ -4,7 +4,6 @@
   padding: 0px;
   text-decoration: none;
   font-size: 62.5%;
-  /*font-family: "sans-serif";*/
 }
 
 .gridConteiner {
@@ -769,6 +768,7 @@ a:hover {
     list-style: none;
   }
   .header__nav__list__item {
+    color: white;
     font-size: 2rem;
     padding-right: 20px;
     text-decoration: none;
@@ -937,6 +937,7 @@ a:hover {
     list-style: none;
   }
   .header__nav__list__item {
+    color: white;
     font-size: 2.5rem;
     padding-right: 20px;
     text-decoration: none;
